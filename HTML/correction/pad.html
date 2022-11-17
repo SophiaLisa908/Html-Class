@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P card</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, rgb(65, 68, 76), rgb(31, 33, 41))
+        }
+        .card {
+            width: 300px;
+            background-color: #fff;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-upper, .class-lower {
+            flex: 1;
+        }
+        .card-upper {
+            background-color: linear-gradient(to right, rgb(78, 84, 234), rgb(98, 151, 231)) ;
+            padding: 1rem, .8rem;
+        }
+        .card-lower {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-upper"></div>
+        <div class="card-lower"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(234, 63, 45, .5);*/
+            /* position: relative; */
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999; 
+        } */
+        /* .box1 {
+           right: 200px;
+           top: 20PX;
+           position: absolute;
+           bottom: 5PX;
+
+        }
+        .box2 {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(234, 234, 45, 0.5);
+        } */
+        /* .box1 {
+            width: 600px;
+            height: 500px;
+            background-color: #000;
+            margin: 0 auto;
+            position: relative;
+            color: #fff;
+        }
+        .box2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            color: #000;
+            bottom: 50px;
+            left: -20px;
+        } */
+        .floating-btn {
+            width: fit-content;
+            color: white;
+            font-size: 2rem;
+            padding: 1rem;
+            background-color: #333;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+        section {
+            height: 100vh;
+            background-color: #eee;
+            padding: 5rem;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            min-height: 100vh;
+        }
+        .sticky-nav {
+            position: sticky;
+            background-color: #666;
+            color: #fff;
+            padding: 1rem;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Relative -->
+<!-- <div class="box box1">lalala
+    <div class="box box2">hahaha</div>
+</div> -->
+<section>
+    <header class="sticky-nav">
+        <h2> First Title </h2>
+            </header>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ea itaque ex facilis aspernatur hic tempore dolore molestias voluptates vel, ullam officiis, optio sint soluta rem! Quas, quibusdam corporis ducimus quidem ex exercitationem aliquam praesentium cumque reprehenderit, sint in possimus accusamus magnam beatae? Neque consequatur quos quam voluptate rem nisi debitis quibusdam iusto reprehenderit corporis? Placeat officiis accusantium, fugiat, nobis eligendi doloribus ipsa maxime dolorem beatae nostrum quae dolorum aperiam! Fuga ad repellendus ullam et dicta incidunt ipsam laudantium laboriosam distinctio quam non delectus voluptates, placeat suscipit excepturi! Totam reprehenderit aliquid minima dolore magni beatae nihil repellat eaque, at iure ullam voluptatum optio commodi quod in velit molestias. Ut laudantium omnis a corporis modi vel voluptatem provident doloribus totam exercitationem est ullam, expedita qui sapiente velit! Iusto tempora suscipit libero, amet qui ipsum cum sit voluptas, adipisci maiores veniam accusantium esse pariatur laborum, dignissimos blanditiis! Et, sapiente voluptatem. Consectetur suscipit consequuntur repellat quo, necessitatibus, dicta quas laudantium mollitia minima dignissimos ipsam? Deleniti repudiandae consequatur tenetur molestias veniam? Soluta similique reiciendis necessitatibus eum velit doloremque delectus praesentium dignissimos perspiciatis quia facere quam unde eligendi adipisci ducimus non sequi eaque, doloribus totam nam nulla, nobis dolorum ratione? Officiis itaque dolor deleniti labore nostrum, quidem nemo sit officia optio dignissimos maxime quasi earum molestias non autem quisquam iure inventore ut quo! Cum itaque id aspernatur aut dolores aperiam voluptatum tempora, excepturi hic praesentium odit. Sapiente qui reiciendis eaque. Nam ullam neque sit, animi doloribus odio placeat est quo non porro autem quasi molestias illo ducimus rem! Vitae esse numquam architecto nemo itaque eaque enim distinctio hic nihil animi delectus ipsum possimus dolorem molestiae qui aliquid, temporibus repellendus minima harum, est dolor nostrum voluptatibus ullam? Illum quae dolorum ullam dolore hic, at vitae fugiat culpa sequi, et voluptate quam? Perspiciatis voluptates maiores cumque consequatur, nisi enim rem iure at quisquam? Voluptatibus corrupti, et illo debitis assumenda voluptas incidunt sit sint! Molestiae perferendis tempore possimus autem esse ducimus, vel quam quasi laborum ea voluptates in reprehenderit voluptatem iste incidunt repudiandae minus harum et adipisci dolor error praesentium tenetur. Libero quisquam, temporibus, nesciunt nobis eaque officia similique illo sunt aut non alias? Harum porro similique obcaecati, sequi ratione quisquam unde quis fugiat dolor, vitae sapiente perferendis ab eligendi natus voluptatibus ipsa maxime reprehenderit accusantium nesciunt labore eaque officia. Reprehenderit ratione dicta minus! Ipsum earum suscipit ratione odit ipsa quas provident eius eos, dolore corporis animi nemo.
+</section>
+
+<section>
+    <header class="sticky-nav">
+<h2> Second Title</h2>
+    </header>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ea itaque ex facilis aspernatur hic tempore dolore molestias voluptates vel, ullam officiis, optio sint soluta rem! Quas, quibusdam corporis ducimus quidem ex exercitationem aliquam praesentium cumque reprehenderit, sint in possimus accusamus magnam beatae? Neque consequatur quos quam voluptate rem nisi debitis quibusdam iusto reprehenderit corporis? Placeat officiis accusantium, fugiat, nobis eligendi doloribus ipsa maxime dolorem beatae nostrum quae dolorum aperiam! Fuga ad repellendus ullam et dicta incidunt ipsam laudantium laboriosam distinctio quam non delectus voluptates, placeat suscipit excepturi! Totam reprehenderit aliquid minima dolore magni beatae nihil repellat eaque, at iure ullam voluptatum optio commodi quod in velit molestias. Ut laudantium omnis a corporis modi vel voluptatem provident doloribus totam exercitationem est ullam, expedita qui sapiente velit! Iusto tempora suscipit libero, amet qui ipsum cum sit voluptas, adipisci maiores veniam accusantium esse pariatur laborum, dignissimos blanditiis! Et, sapiente voluptatem. Consectetur suscipit consequuntur repellat quo, necessitatibus, dicta quas laudantium mollitia minima dignissimos ipsam? Deleniti repudiandae consequatur tenetur molestias veniam? Soluta similique reiciendis necessitatibus eum velit doloremque delectus praesentium dignissimos perspiciatis quia facere quam unde eligendi adipisci ducimus non sequi eaque, doloribus totam nam nulla, nobis dolorum ratione? Officiis itaque dolor deleniti labore nostrum, quidem nemo sit officia optio dignissimos maxime quasi earum molestias non autem quisquam iure inventore ut quo! Cum itaque id aspernatur aut dolores aperiam voluptatum tempora, excepturi hic praesentium odit. Sapiente qui reiciendis eaque. Nam ullam neque sit, animi doloribus odio placeat est quo non porro autem quasi molestias illo ducimus rem! Vitae esse numquam architecto nemo itaque eaque enim distinctio hic nihil animi delectus ipsum possimus dolorem molestiae qui aliquid, temporibus repellendus minima harum, est dolor nostrum voluptatibus ullam? Illum quae dolorum ullam dolore hic, at vitae fugiat culpa sequi, et voluptate quam? Perspiciatis voluptates maiores cumque consequatur, nisi enim rem iure at quisquam? Voluptatibus corrupti, et illo debitis assumenda voluptas incidunt sit sint! Molestiae perferendis tempore possimus autem esse ducimus, vel quam quasi laborum ea voluptates in reprehenderit voluptatem iste incidunt repudiandae minus harum et adipisci dolor error praesentium tenetur. Libero quisquam, temporibus, nesciunt nobis eaque officia similique illo sunt aut non alias? Harum porro similique obcaecati, sequi ratione quisquam unde quis fugiat dolor, vitae sapiente perferendis ab eligendi natus voluptatibus ipsa maxime reprehenderit accusantium nesciunt labore eaque officia. Reprehenderit ratione dicta minus! Ipsum earum suscipit ratione odit ipsa quas provident eius eos, dolore corporis animi nemo.
+</section>
+<div class="floating-btn">
+    &UpArrow;
+</div> 
+</body>
+</html>

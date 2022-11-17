@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Me Table</title>
+    </head>
+ <style>
+    body{
+            font-family: verdana;
+            overflow-y: hidden;
+        }
+        .header{
+            display: flex;
+        }
+       .btn{
+        background-color: deepskyblue;
+        border-radius: 5px;
+        height: 40px;
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 115px;
+        border: none;
+       }
+       .di{
+        display: flex;
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+         margin-top: 50px;
+         margin-left: 935px;  
+       }
+       .display{
+        border: 1px solid #eee;
+        background-color: #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+        table{
+             border-collapse: collapse;
+             color: darkslategray;
+             width: 1200px;
+             margin: 30px auto;
+        }
+        span{
+            color:  #80afcd;
+        }
+        #head{
+            text-align: center;
+            color: black;
+        }
+        #head:hover{
+            background: white;
+        }
+        td{
+            border: 1px solid #eee;
+            padding: 1rem;
+            text-align: left;
+        }
+        th{
+            border: 1px solid #eee;
+            padding: 1rem;
+            text-align: left;
+            font-weight: bold;
+            color: #000;
+        }
+        .second{
+            width: 1600px;
+        }
+        body tr:hover{
+            color: #000;
+            background: teal;
+            transition: 0.2s;
+            box-shadow: 30px;
+        }
+        @media only screen and(max-width:700px){
+            .table{
+                overflow-x: scroll;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="btn">Focus</button>
+        <div class="di">
+            <button class="display">Display all</button>
+        <button class="display"> Display</button>
+        </div>
+    </div>
+   
+    
+    <table>
+        <tr>
+            <td colspan="5" id="head">An example of a responsive table based on RWD-Table_Patterns' <span>solutions:</span></td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <th class="second">Languages</th>
+            <th>Population</th>
+            <th>Medium Age</th>
+            <th>Area(Km <sup>3</sup> )</th>
+        </tr>
+        <tr>
+            <td>Argentina</td>
+            <td class="second">Spanish(official), English, Italian, German, French</td>
+            <td>41,803,125</td>
+            <td>31.3 </td>
+            <td>2,780,387</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td class="second">English 79%, native and other languages</td>
+            <td>23,630,169</td>
+            <td>37.3</td>
+            <td>7,739,983</td>
+        </tr>
+        <tr>
+            <td>Greece</td>
+            <td class="second">Greek 99%(official), English,French</td>
+            <td>11,123,404</td>
+            <td>43.2 </td>
+            <td>131,956</td>
+        </tr>
+        <tr>
+            <td>Luxembourg</td>
+            <td class="second">Luxembourg (national)French, German(both administrative)  </td>
+            <td>536,761</td>
+            <td>39.1</td>
+            <td>2,586</td>
+        </tr>
+        <tr>
+            <td>Russia</td>
+            <td class="second">Russian,others</td>
+            <td>142,467,651</td>
+            <td>38.4</td>
+            <td>17,076,310</td>
+        </tr>
+        <tr>
+            <td>Sweeden</td>
+            <td class="second">Swedish, small Sami- and Finnish-speaking minorities</td>
+            <td>9,631,261</td>
+            <td>41.1</td>
+            <td>449,954</td>
+        </tr>
+        <tr><td colspan="5" id="head"> Data retrieved from <span>intoplease</span> and <span>worldometers</span></td></tr>
+    </table>
+    
+    
+</body>
+</html>

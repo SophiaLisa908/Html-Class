@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ball {
+            color: yellow;
+            height: 100px;
+            background-color: yellow;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: X-L;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+
+        }
+
+
+
+        @keyframes X-L {
+            0%{
+                left: 0px;
+                top: 0;
+                background-color: yellow;
+            }
+
+            25%{
+                left: 400px;
+                top: 0;
+                background-color: blue;
+                
+            }
+
+               75%{
+                top: 200px;
+                left: 400px;
+                background-color: red;
+            }
+
+            100%{
+                top: 200px;
+                left: 800px;
+                background-color: green;
+            }
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

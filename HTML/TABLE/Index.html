@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+      body {
+         overflow-x: hidden;
+      }
+      table {
+         width: 700px;
+         border: 1px solid #000;
+         border-collapse: collapse;
+         margin: 0, auto; 
+      }
+      .table-container {
+         width: 100%;
+         overflow-x: auto;
+      }
+      td,th{
+         border: 1px solid #000;
+         padding: 1rem;
+         text-align: center;
+      }
+      tr:nth-child(1) {
+      background-color:#000;
+      /* color: beige; */
+      }
+      tr:nth-child(1) > td {
+         color: #fff;
+      } 
+      tr:nth-child(2n-2){
+         background-color: #eee;
+      }
+      /* even = 2n-2*/
+      /* odd = 2n-1 */
+    </style>
+</head>
+
+<body>
+    <!-- table: table is used to represent data in rows and coloum -->
+    <table>
+        <h2> casual table</h2>
+    <tr>    <td>S/N</td>
+            <td>Name</td>
+            <td>Course</td>
+    </tr> 
+
+    <tr>    <td>1</td>
+            <td>John</td>
+            <td>PHP</td>
+    </tr>
+
+    <tr>    <td>2</td>
+            <td>Chimaobi</td>
+            <td>ADSE</td>
+    </tr>
+            
+    <tr>    <td>3</td>
+            <td>Lisa</td>
+            <td>PHE</td>
+    </tr>   
+    </table>
+
+
+
+
+    
+<!-- ROWSPAN -->
+<div class="table-container">
+
+   x
+</div>
+<table>
+   <tr>
+      <td>DEPT</td>
+      <td>NAMES</td>
+      <td>SALARY</td>
+      <td>STACK</td>
+   </tr>
+   <tr>
+      <td rowspan="2">IT</td>
+      <td>John</td>
+      <td>$5,000</td>
+      <td>Backend</td>
+   </tr>
+   <tr>
+      <td>Mary</td>
+      <td>$5,000</td>
+      <td>Frontend</td>
+   </tr>
+   
+   <tr>
+      <td rowspan="2">CUSTOMER CARE</td>
+      <td>Mary</td>
+      <td>$2,000</td>
+      <td>Customer care</td>
+   </tr>
+   <tr>
+      <td>Lucy</td>
+      <td>$2,000</td>
+      <td>Customer care</td>
+   </tr>
+</table>
+<div class="table-container">
+<!-- colspan -->
+<!-- <h2>time table</h2> -->
+<!-- <table border="1">
+
+ <tr>
+    <th>time/day</th>
+    <th>9am-11am</th>
+    <th>11am-1pm</th>
+    <th>1pm-3pm</th>
+    <th>3pm-5pm</th>
+ </tr>
+ <tr>
+    <td>Mon</td>
+    <td colspan="2">html</th>
+    <td>CSS</td>
+    <td>PHP</th>
+    
+ </tr>
+ <tr>
+    <td>Tue</td>
+    <td colspan="2">html</th>
+    <td cosplan="2">javascript</td>
+    
+ </tr>
+ <tr>
+    <td>Wue</td>
+    <td colspan="2">JSON</td>
+    <td colspan="2">NODEJS</td>
+ </tr>
+</div>
+</body>
+</html>

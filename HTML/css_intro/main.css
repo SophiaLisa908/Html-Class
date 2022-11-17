@@ -1,0 +1,46 @@
+/* selectors */
+/* type selector [h1, div, body, p, style, b]  */
+/* ID selectors [#] */
+/* class selectors [.]*/
+/* universal selectors [*] */
+
+/* colors */
+/* HEX - #000000 | #000 */
+/* RGB - rgb(0, 0, 0) */
+/* RGBA - rgba(0, 0, 0, 0.5) */
+/* HSL- hue, saturation and lightness */
+
+h1{
+    color: #ffffff;
+    background-color: hsl(238, 100%, 50%);
+}
+
+/* MARGIN */
+h1{
+    margin-top: 50px; 
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+     
+    /* shorthand */
+     margin-top: 50px;
+     margin: 50px 120px 60px 100px;
+    margin:50px 100px;
+}
+
+/* PADDING - space within the top */
+h1{
+    padding-top: 40px; 
+    padding: 100px;
+}
+
+
+/* BORDER */
+/* those edges of the box */
+h1{
+    /* border-width: 5px;
+    border-color: #f00;
+    border-style: solid; */
+
+    border: 5px solid #000;
+}
